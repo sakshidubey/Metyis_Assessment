@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PVH B2B Feature" time="15.36" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.16.1+1-LTS-1"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.16.1.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/sakshidubey/eclipse-workspace/Asssessment_Test"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/sakshidubey/eclipse-workspace/Asssessment_Test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.16.1+1-LTS-1"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/dt/ghbz1mjx3gj9wlzx5r5n5lxc0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/sakshidubey/Downloads/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/sakshidubey/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/sakshidubey/Downloads/apache-maven-3.6.3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="12.6"/>
+    <property name="library.jansi.path" value="/Users/sakshidubey/Downloads/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="user.home" value="/Users/sakshidubey"/>
+    <property name="user.timezone" value="Europe/Lisbon"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="sakshidubey"/>
+    <property name="java.class.path" value="/Users/sakshidubey/Downloads/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.16.1.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.16.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/sakshidubey/Downloads/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="SC_02_Validate Login negative flow with invalid credentials" classname="PVH B2B Feature" time="15.36">
+    <error message="Element &lt;button class=&quot;header__link_NElNw header__action_1N9Tu account__icon_2qLVr&quot; type=&quot;button&quot;&gt; is not clickable at point (1100,76) because another element &lt;div class=&quot;ReactModal__Overlay--after-open ReactModal__Overlay-custom__SESv ReactModal__Overlay--no-animation_24Ep_ ReactModal__Overlay--transparent_31fpl ReactModal__Overlay--cookie_RgH9b&quot;&gt; obscures it&#10;Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;11.0.16.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [7a6f8464-a05d-4634-b5fb-9560af870c14, clickElement {id=205f0bea-a9ad-4930-ab8b-914922bb1c8e}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:9138, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 23698, moz:profile: /var/folders/dt/ghbz1mjx3gj..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:9138/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[FirefoxDriver: firefox on MAC (7a6f8464-a05d-4634-b5fb-9560af870c14)] -&gt; xpath: //button[contains(text(),&apos;Sign In / Register&apos;)]]&#10;Session ID: 7a6f8464-a05d-4634-b5fb-9560af870c14" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+Element <button class="header__link_NElNw header__action_1N9Tu account__icon_2qLVr" type="button"> is not clickable at point (1100,76) because another element <div class="ReactModal__Overlay--after-open ReactModal__Overlay-custom__SESv ReactModal__Overlay--no-animation_24Ep_ ReactModal__Overlay--transparent_31fpl ReactModal__Overlay--cookie_RgH9b"> obscures it
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7a6f8464-a05d-4634-b5fb-9560af870c14, clickElement {id=205f0bea-a9ad-4930-ab8b-914922bb1c8e}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:9138, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 23698, moz:profile: /var/folders/dt/ghbz1mjx3gj..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:9138/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (7a6f8464-a05d-4634-b5fb-9560af870c14)] -> xpath: //button[contains(text(),'Sign In / Register')]]
+Session ID: 7a6f8464-a05d-4634-b5fb-9560af870c14
+]]></error>
+    <system-out><![CDATA[Scenario name : SC_02_Validate Login negative flow with invalid credentials
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+1680614889404	geckodriver	INFO	Listening on 127.0.0.1:471921680614889696	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "11036" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:11036/,http://localhost:11036/,http://[::1]:11036/" "-foreground" "-no-remote" "-profile" "/var/folders/dt/ghbz1mjx3gj9wlzx5r5n5lxc0000gn/T/rust_mozprofileC15RFc"console.warn: services.settings: Ignoring preference override of remote settings serverconsole.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment1680614890472	Marionette	INFO	Marionette enabled1680614890569	Marionette	INFO	Listening on port 58675console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"Read port: 586752023-04-04 14:28:10.634 plugin-container[23691:1056349] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 14:28:10.635 plugin-container[23691:1056349] nil host used in call to allowsAnyHTTPSCertificateForHost:2023-04-04 14:28:10.649 plugin-container[23691:1056349] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 14:28:10.649 plugin-container[23691:1056349] nil host used in call to allowsAnyHTTPSCertificateForHost:2023-04-04 14:28:10.649 plugin-container[23691:1056353] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 14:28:10.649 plugin-container[23691:1056353] nil host used in call to allowsAnyHTTPSCertificateForHost:WebDriver BiDi listening on ws://127.0.0.1:110361680614890744	RemoteAgent	WARN	TLS certificate errors will be ignored for this sessionconsole.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/dt/ghbz1mjx3gj9wlzx5r5n5lxc0000gn/T/rust_mozprofileC15RFc/search.json.mozlz4", (void 0)))DevTools listening on ws://127.0.0.1:11036/devtools/browser/87aa61a7-b0b1-4189-b1d9-b5bb801d20bb2023-04-04 13:28:12.832 plugin-container[23694:1056552] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 13:28:12.832 plugin-container[23694:1056552] nil host used in call to allowsAnyHTTPSCertificateForHost:2023-04-04 13:28:12.863 plugin-container[23694:1056552] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 13:28:12.863 plugin-container[23694:1056552] nil host used in call to allowsAnyHTTPSCertificateForHost:2023-04-04 13:28:12.864 plugin-container[23694:1056571] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 13:28:12.864 plugin-container[23694:1056571] nil host used in call to allowsAnyHTTPSCertificateForHost:1680614893413	geckodriver	INFO	Listening on 127.0.0.1:238081680614893475	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "9138" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:9138/,http://localhost:9138/,http://[::1]:9138/" "-foreground" "-no-remote" "-profile" "/var/folders/dt/ghbz1mjx3gj9wlzx5r5n5lxc0000gn/T/rust_mozprofilesYMBiq"console.warn: services.settings: Ignoring preference override of remote settings serverconsole.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment1680614893963	Marionette	INFO	Marionette enabled1680614894046	Marionette	INFO	Listening on port 587122023-04-04 14:28:14.086 plugin-container[23699:1056666] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 14:28:14.087 plugin-container[23699:1056666] nil host used in call to allowsAnyHTTPSCertificateForHost:console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"2023-04-04 14:28:14.092 plugin-container[23699:1056666] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 14:28:14.092 plugin-container[23699:1056666] nil host used in call to allowsAnyHTTPSCertificateForHost:2023-04-04 14:28:14.092 plugin-container[23699:1056673] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 14:28:14.092 plugin-container[23699:1056673] nil host used in call to allowsAnyHTTPSCertificateForHost:Read port: 58712WebDriver BiDi listening on ws://127.0.0.1:91381680614894318	RemoteAgent	WARN	TLS certificate errors will be ignored for this sessionconsole.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/dt/ghbz1mjx3gj9wlzx5r5n5lxc0000gn/T/rust_mozprofilesYMBiq/search.json.mozlz4", (void 0)))2023-04-04 13:28:16.058 plugin-container[23753:1056936] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 13:28:16.058 plugin-container[23753:1056936] nil host used in call to allowsAnyHTTPSCertificateForHost:2023-04-04 13:28:16.061 plugin-container[23753:1056936] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 13:28:16.061 plugin-container[23753:1056936] nil host used in call to allowsAnyHTTPSCertificateForHost:2023-04-04 13:28:16.061 plugin-container[23753:1056944] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 13:28:16.061 plugin-container[23753:1056944] nil host used in call to allowsAnyHTTPSCertificateForHost:DevTools listening on ws://127.0.0.1:9138/devtools/browser/78866bd9-0b94-4caa-9406-f11380762905JavaScript warning: https://pt.tommy.com/-62NHU8-DbaeCqmhunIn4VbK/tEawVLk8EO/O0EVBCJVAg/PV1lPl0e/XgQB, line 1: unreachable code after return statementJavaScript warning: https://pt.tommy.com/_next/static/chunks/17f83eadbc67e3f08d2fc12cc31cd3a0bf762f34.23b2d14802f77aa6a6a4.js, line 1: unreachable code after return statementJavaScript warning: https://pt.tommy.com/_next/static/chunks/17f83eadbc67e3f08d2fc12cc31cd3a0bf762f34.23b2d14802f77aa6a6a4.js, line 1: unreachable code after return statementJavaScript warning: https://pt.tommy.com/_next/static/chunks/17f83eadbc67e3f08d2fc12cc31cd3a0bf762f34.23b2d14802f77aa6a6a4.js, line 1: unreachable code after return statementJavaScript warning: https://pt.tommy.com/-62NHU8-DbaeCqmhunIn4VbK/tEawVLk8EO/O0EVBCJVAg/PV1lPl0e/XgQB, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.2023-04-04 13:28:19.142 plugin-container[23759:1057039] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 13:28:19.142 plugin-container[23759:1057039] nil host used in call to allowsAnyHTTPSCertificateForHost:2023-04-04 13:28:19.148 plugin-container[23759:1057039] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 13:28:19.148 plugin-container[23759:1057039] nil host used in call to allowsAnyHTTPSCertificateForHost:2023-04-04 13:28:19.149 plugin-container[23759:1057034] nil host used in call to allowsSpecificHTTPSCertificateForHost2023-04-04 13:28:19.149 plugin-container[23759:1057034] nil host used in call to allowsAnyHTTPSCertificateForHost:1680614901657	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:587971680614901665	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.1680614901694	Marionette	INFO	Stopped listening on port 58712]]></system-err>
+  </testcase>
+</testsuite>
