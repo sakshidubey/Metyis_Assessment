@@ -1,15 +1,12 @@
 package util;
 
 import java.time.Duration;
-
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import pageobjects.BasePage;
 
 public class WebDriverUtility {
 	
@@ -20,6 +17,11 @@ public class WebDriverUtility {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 	
+	/**
+     * Get a text value of a Web element.
+     * @params : WebElement
+     * @return : String
+     */
 	public static String getText(WebElement ele) {
 		try {
 			wait.until(ExpectedConditions.visibilityOf(ele));
@@ -30,7 +32,11 @@ public class WebDriverUtility {
 		return null;
 	}
 	
-	public static void selectRememberMeCheckBox(WebElement ele) {
+	/**
+     * Select check box by providing Web Element.
+     * @params : WebElement
+     */
+	public static void selectCheckBox(WebElement ele) {
 		try {
 			wait.until(ExpectedConditions.elementToBeClickable(ele));
 			ele.click();
@@ -39,10 +45,20 @@ public class WebDriverUtility {
 		}
 	}
 	
+	/**
+     * Add cookies in the browser.
+     * @params : Cookie name in string
+     * @params : Cookie value in string
+     */
 	public static void addCookies(String cookieName, String cookieValue) {
 		driver.manage().addCookie(new Cookie(cookieName, cookieValue));
 	}
 	
+	/**
+     * Check Web element is visible.
+     * @params : WebElement
+     * @return : boolean
+     */
 	public static boolean isElementVisible(WebElement ele) {
 		try {
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

@@ -18,14 +18,14 @@ Scenario Outline: SC_03_Validate Login negative flow with invalid credentials an
     When I enter invalid "<textField>" in login credentials
     Then Application should display "username and password don't match" error message
     And I provide empty value in "<textField>" textbox
-    Then Application should display "You need to fill in this field" below "<textField>" textbox
+    Then Application should display "You need to fill in this field" error message below "<textField>" textbox
     And I close the sigin dialog
     Examples:
       | textField 				|
       | email				      |
       | password 			  	|
     
-Scenario Outline: SC_04_Validate Login negative flow with invalid "<credentialFormat>"
+Scenario Outline: SC_04_Validate Login negative flow with invalid format"<credentialFormat>"
     Given I navigate to the application URL "https://pt.tommy.com/men"
     When I enter invalid "<credentialFormat>" in login credentials
     Then Application should display "<credentialFormat>" error message

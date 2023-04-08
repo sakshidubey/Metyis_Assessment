@@ -1,14 +1,9 @@
 package stepdefs;
 
 import java.io.IOException;
-
 import java.time.Duration;
-
 import org.junit.Assert;
-import org.openqa.selenium.Cookie;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.BasePage;
 import pageobjects.LoginPage;
@@ -35,10 +30,11 @@ public class LoginStepDefs {
 	@Given("^I navigate to the application URL \"([^\"]*)\"$")
 	public void navigate_to_the_application_url(String url) throws IOException {
 		driver.get(url);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		WebDriverUtility.addCookies("PVH_COOKIES_GDPR", "Accept");
 		WebDriverUtility.addCookies("PVH_COOKIES_GDPR_ANALYTICS", "Accept");
 		WebDriverUtility.addCookies("PVH_COOKIES_GDPR_SOCIALMEDIA", "Accept");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.navigate().refresh();
 	}
 	
 	@When("I click on Sign In button")
@@ -129,8 +125,8 @@ public class LoginStepDefs {
 		}
 	}
 
-	@Then("Application should display {string} below {string} textbox")
-	public void application_should_display_below_textbox(String msg, String textField) throws Exception {
+	@Then("Application should display {string} error message below {string} textbox")
+	public void application_should_display_error_message_below_textbox(String msg, String textField) throws Exception {
 		switch (textField.toUpperCase()) {
 		case "EMAIL":
 			Assert.assertTrue("Error message not present : " + msg, WebDriverUtility.isElementVisible(LoginPage.getError_belowSignIn()));
@@ -166,11 +162,8 @@ public class LoginStepDefs {
 
 	@And("I should select Remember me checkbox")
 	public void i_should_select_remember_me_checkbox() {
-		WebDriverUtility.selectRememberMeCheckBox(LoginPage.getCheckbox_rememberMe());
+		WebDriverUtility.selectCheckBox(LoginPage.getCheckbox_rememberMe());
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		Assert.assertTrue("Remember me checkbox not checked", LoginPage.getCheckbox_rememberMeValue().isSelected());
 	}
-
-	
-
 }

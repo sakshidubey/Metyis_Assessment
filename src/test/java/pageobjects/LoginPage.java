@@ -17,7 +17,7 @@ public class LoginPage {
 	BasePage basePage;
 
 	public LoginPage(WebDriver driver) {
-		this.driver = driver;
+		LoginPage.driver = driver;
 		PageFactory.initElements(driver, this);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
@@ -164,24 +164,4 @@ public class LoginPage {
 		}
 
 	}
-	
-//	public static String getText(WebElement ele) {
-//		try {
-//			wait.until(ExpectedConditions.visibilityOf(ele));
-//			return ele.getText();
-//		} catch (NoSuchElementException e) {
-//			e.printStackTrace();
-//		}
-//		return null;
-//	}
-//	
-//	public static void selectRememberMeCheckBox(WebElement ele) {
-//		try {
-//			wait.until(ExpectedConditions.elementToBeClickable(checkbox_rememberMe));
-//			checkbox_rememberMe.click();
-//		} catch (NoSuchElementException e) {
-//			e.printStackTrace();
-//		}
-//	}
-
 }
