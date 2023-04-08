@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.BasePage;
 import pageobjects.LoginPage;
 import util.Constants;
+import util.ReadPropertiesFile;
 import util.WebDriverUtility;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -23,13 +24,25 @@ public class LoginStepDefs {
 	public LoginStepDefs(BasePage basePage) {
 		this.basePage = basePage;
 		driver = basePage.getDriver();
+		System.out.println("Driver name : "+driver);
 		basePage.intializePageObjects(driver);
 		new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
+//	@Given("^I navigate to the application URL \"([^\"]*)\"$")
+//	public void navigate_to_the_application_url(String url) throws IOException {
+//		String url = ReadPropertiesFile.getApplicationUrl();
+//		driver.get(url);
+//		WebDriverUtility.addCookies("PVH_COOKIES_GDPR", "Accept");
+//		WebDriverUtility.addCookies("PVH_COOKIES_GDPR_ANALYTICS", "Accept");
+//		WebDriverUtility.addCookies("PVH_COOKIES_GDPR_SOCIALMEDIA", "Accept");
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+//		driver.navigate().refresh();
+//	}
 	@Given("^I navigate to the application URL \"([^\"]*)\"$")
 	public void navigate_to_the_application_url(String url) throws IOException {
-		driver.get(url);
+		String url1 = ReadPropertiesFile.getApplicationUrl();
+		driver.get(url1);
 		WebDriverUtility.addCookies("PVH_COOKIES_GDPR", "Accept");
 		WebDriverUtility.addCookies("PVH_COOKIES_GDPR_ANALYTICS", "Accept");
 		WebDriverUtility.addCookies("PVH_COOKIES_GDPR_SOCIALMEDIA", "Accept");
@@ -115,10 +128,12 @@ public class LoginStepDefs {
 	public void i_provide_empty_value_in_textbox(String textField) throws Exception {
 		switch (textField.toUpperCase()) {
 		case "EMAIL":
-			LoginPage.getTextfield_email().clear();
+			LoginPage.getTextfield_email().click();
+			LoginPage.getTextfield_password().click();
 			break;
 		case "PASSWORD":
-			LoginPage.getTextfield_password().clear();
+			LoginPage.getTextfield_password().click();
+			LoginPage.getTextfield_email().click();
 			break;
 		default:
 			throw new Exception("Invalid selection");

@@ -6,24 +6,31 @@
 	<artifactId>Asssessment_Test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <cucumber.version>6.11.0</cucumber.version>
-        <extentreports.cucumber7.adapter.version>1.10.1</extentreports.cucumber7.adapter.version>
-        <extentreports.version>5.0.9</extentreports.version>
-        <selenium.version>4.3.0</selenium.version>
-        <webdrivermanager.version>5.2.1</webdrivermanager.version>
-        <testng.version>7.4.0</testng.version>      
-        <maven.compiler.plugin.version>3.10.1</maven.compiler.plugin.version>
-        <maven.surefire.plugin.version>3.0.0-M7</maven.surefire.plugin.version>
-        <maven.compiler.source.version>11</maven.compiler.source.version>
-        <maven.compiler.target.version>11</maven.compiler.target.version>
-    </properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cucumber.version>7.10.0</cucumber.version>
+		<extentreports.cucumber7.adapter.version>1.10.1</extentreports.cucumber7.adapter.version>
+		<extentreports.version>5.0.9</extentreports.version>
+		<selenium.version>4.8.0</selenium.version>
+		<webdrivermanager.version>3.0.0</webdrivermanager.version>
+		<junit.version>4.13.1</junit.version>
+		<gherkin.version>26.0.3</gherkin.version>
+		<commons-lang3.version>3.12.0</commons-lang3.version>
+		<commons-collections4.version>4.4</commons-collections4.version>
+		<maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
+		<maven.surefire.plugin.version>2.19.1</maven.surefire.plugin.version>
+		<maven.clean.plugin.version>3.2.0</maven.clean.plugin.version>
+		<maven.resources.plugin.version>3.3.0</maven.resources.plugin.version>
+		<maven.jar.plugin.version>3.2.2</maven.jar.plugin.version>
+		<maven.install.plugin.version>3.1.0</maven.install.plugin.version>
+		<maven.deploy.plugin.version>2.8.2</maven.deploy.plugin.version>
+	</properties>
+	
 	<dependencies>
 
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.13.1</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -32,7 +39,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.8.0</version>
+			<version>${selenium.version}</version>
 		</dependency>
 
 		<!--
@@ -40,7 +47,7 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>3.0.0</version>
+			<version>${webdrivermanager.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -56,75 +63,57 @@
 			</exclusions>
 		</dependency>
 
-
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.10.0</version>
+			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>7.10.0</version>
+			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-core</artifactId>
-			<version>7.10.0</version>
+			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
-
-		<!--<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-java</artifactId>
-			<version>7.11.0</version>
-		</dependency>
 		
-		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-junit</artifactId>
-			<version>7.11.0</version>
-		</dependency>-->
-
 		<!--
 		https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-picocontainer</artifactId>
-			<version>7.10.0</version>
+			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-jvm</artifactId>
-			<version>7.10.0</version>
+			<version>${cucumber.version}</version>
 			<type>pom</type>
-       </dependency>
+		</dependency>
 
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>gherkin</artifactId>
-			<version>26.0.3</version>
+			<version>${gherkin.version}</version>
 		</dependency>
-		<!--<dependency>
-			<groupId>com.github.mkolisnyk</groupId>
-			<artifactId>cucumber-runner</artifactId>
-			<version>1.3.5</version>
-		</dependency>-->
-
+		
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>3.12.0</version>
+			<version>${commons-lang3.version}</version>
 		</dependency>
 
 		<!--
@@ -132,23 +121,22 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-collections4</artifactId>
-			<version>4.4</version>
+			<version>${commons-collections4.version}</version>
 		</dependency>
-		
+
 		<!-- Cucumber ExtentReport Adapter -->
-        <dependency>
-            <groupId>tech.grasshopper</groupId>
-            <artifactId>extentreports-cucumber7-adapter</artifactId>
-            <version>${extentreports.cucumber7.adapter.version}</version>
-        </dependency>
- 
- 
-        <!-- Extent Report -->
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>${extentreports.version}</version>
-        </dependency>
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extentreports-cucumber7-adapter</artifactId>
+			<version>${extentreports.cucumber7.adapter.version}</version>
+		</dependency>
+
+		<!-- Extent Report -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>${extentreports.version}</version>
+		</dependency>
 
 	</dependencies>
 
@@ -160,25 +148,25 @@
 			<plugins>
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
-					<version>3.2.0</version>
+					<version>${maven.clean.plugin.version}</version>
 				</plugin>
 				<!-- see
 				http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
-					<version>3.3.0</version>
+					<version>${maven.resources.plugin.version}</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<configuration>
-						<compilerVersion>3.5.1</compilerVersion>
+						<compilerVersion>${maven.compiler.plugin.version}</compilerVersion>
 						<source>8</source>
 						<target>8</target>
 					</configuration>
 				</plugin>
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.19.1</version>
+					<version>${maven.surefire.plugin.version}</version>
 					<configuration>
 						<parallel>methods</parallel>
 						<useUnlimitedThreads>true</useUnlimitedThreads>
@@ -191,15 +179,15 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>3.2.2</version>
+					<version>${maven.jar.plugin.version}</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-install-plugin</artifactId>
-					<version>3.1.0</version>
+					<version>${maven.install.plugin.version}</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-deploy-plugin</artifactId>
-					<version>2.8.2</version>
+					<version>${maven.deploy.plugin.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
