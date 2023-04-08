@@ -7,6 +7,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import pageobjects.BasePage;
+import util.ReadPropertiesFile;
 
 public class Hooks {
 
@@ -19,6 +20,7 @@ public class Hooks {
 	@Before
 	public void initializeDriver(Scenario scenario) throws Exception {	
 		basePage.initDriver();
+		ReadPropertiesFile.loadData();
 	}
 	@AfterStep
     public void captureScreenshot(Scenario scenario)

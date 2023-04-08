@@ -32,7 +32,7 @@ public class ReadPropertiesFile {
      * @return: String
      */
 	public static String getApplicationUrl() throws IOException {
-		loadData();
+//		loadData();
 		String url = properties.getProperty("url");
 		if (url != null)
 			return url;
