@@ -2,8 +2,10 @@
 # PVH B2B
 
 This repository contains regression test cases of login flow for the PVH B2B module. It is developed by using Cucumber and Selenium. It also generate HTML report at the end of the execution.
+
+- Framework Architecture and Improvements Overview: 
 	
-	Framework Architecture and Improvments: https://excalidraw.com/#json=zmE0jEUTxtq2emubIx7K6,P2bRxyAHE0NA_NLdjF9LqQ
+	https://excalidraw.com/#json=zmE0jEUTxtq2emubIx7K6,P2bRxyAHE0NA_NLdjF9LqQ
 	
 ## Framework Description
 
@@ -36,8 +38,9 @@ For more, please refer the above link.
 
 To run tests, run the following command
 
-  mvn clean install -DskipTests
-  mvn test -Denvironment=environment -Dbrowser=browser_name
+  - mvn clean install -DskipTests
+  - mvn test -Denvironment=environment -Dbrowser=browser_name
+  - Example :  mvn test -Denvironment=prod -Dbrowser=firefox
 
 To run all regression test features on specific browser, use browser_name can be one of following, but make sure that latest browser version is present :
 
@@ -49,7 +52,6 @@ This framework used environment variable value to pick properties file for the e
     - prod (For now, only this environment is configured)
     - dev
 
-Example :  "mvn test -Denvironment=prod -Dbrowser=firefox"
 
 
 ## Execution Report
