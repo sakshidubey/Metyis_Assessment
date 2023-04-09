@@ -1,19 +1,20 @@
 package stepdefs;
 
 import java.io.IOException;
+
 import java.time.Duration;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pageobjects.BasePage;
 import pageobjects.LoginPage;
 import util.Constants;
 import util.ReadPropertiesFile;
 import util.WebDriverUtility;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 
 public class LoginStepDefs {
 
@@ -28,17 +29,7 @@ public class LoginStepDefs {
 		basePage.intializePageObjects(driver);
 		new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
-
-//	@Given("^I navigate to the application URL \"([^\"]*)\"$")
-//	public void navigate_to_the_application_url(String url) throws IOException {
-//		String url = ReadPropertiesFile.getApplicationUrl();
-//		driver.get(url);
-//		WebDriverUtility.addCookies("PVH_COOKIES_GDPR", "Accept");
-//		WebDriverUtility.addCookies("PVH_COOKIES_GDPR_ANALYTICS", "Accept");
-//		WebDriverUtility.addCookies("PVH_COOKIES_GDPR_SOCIALMEDIA", "Accept");
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//		driver.navigate().refresh();
-//	}
+	
 	@Given("^I navigate to the application URL \"([^\"]*)\"$")
 	public void navigate_to_the_application_url(String url) throws IOException {
 		String url1 = ReadPropertiesFile.getApplicationUrl();

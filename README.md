@@ -3,7 +3,7 @@
 
 This repository contains regression test cases of login flow for the PVH B2B module. It is developed by using Cucumber and Selenium. It also generate HTML report at the end of the execution.
 	
-	Framework Architecture and Improvments: https://excalidraw.com/#json=4Q0N_TgREPXE7B9_nT5Fq,jfpGyw4PUS7HmaL_Hkyufw
+	Framework Architecture and Improvments: https://excalidraw.com/#json=zmE0jEUTxtq2emubIx7K6,P2bRxyAHE0NA_NLdjF9LqQ
 	
 ## Framework Description
 
