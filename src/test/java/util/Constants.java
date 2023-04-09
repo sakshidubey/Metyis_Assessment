@@ -3,7 +3,7 @@ package util;
 public class Constants {
 	
 	public static final String VALID_USERNAME = "sakshiturt@gmail.com";
-	public static final String VALID_PASSWORD = "Turtur@071093";
+	public static final String VALID_PASSWORD = "Sakshi@12345";
 	
 	public static final String INVALID_USERNAME = "abc@gmail.com";
 	public static final String INVALID_PASSWORD = "abc@1234";
